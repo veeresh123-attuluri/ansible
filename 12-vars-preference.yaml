@@ -1,8 +1,8 @@
 - name: variables
   hosts: local
   connection: local
-  vars: 
-    GREET: "PLAY"
+  # vars: 
+  #   GREET: "PLAY"
   vars_files:
   - course.yaml
   # vars_prompt:
@@ -18,4 +18,5 @@
 
   #1. command line or args
   #2. task level
-  #3.
+  #3. prompt
+  #4. play
