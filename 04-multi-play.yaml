@@ -3,7 +3,7 @@
   connection: local #managing its own node, no need of credentials
   tasks:
   - name: PLAY1 and TASK1
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "Hello from PLAY1 and TASK1"
 
 
@@ -12,5 +12,5 @@
   connection: local #managing its own node, no need of credentials
   tasks:
   - name: PLAY2 and TASK2
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "Hello from PLAY2 and TASK2"
