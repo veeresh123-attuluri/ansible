@@ -2,9 +2,9 @@
   hosts: local
   connection: local
    vars: 
-     GREET: "PLAY"
+      GREET: "PLAY"
    vars_files:
-   - course.yaml
+      - course.yaml
    vars_prompt:
    - name: GREET
      prompt: Enter the value
