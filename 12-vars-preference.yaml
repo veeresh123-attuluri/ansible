@@ -1,18 +1,18 @@
 - name: variables
   hosts: local
   connection: local
-  # vars: 
-  #   GREET: "PLAY"
-  # vars_files:
-  # - course.yaml
-  # vars_prompt:
-  # - name: GREET
-  #   prompt: Enter the value
-  #   private: false
+   vars: 
+     GREET: "PLAY"
+   vars_files:
+   - course.yaml
+   vars_prompt:
+   - name: GREET
+     prompt: Enter the value
+     private: false
   tasks:  
   - name: Print course information
-    # vars: 
-    #   GREET: "TASK"
+    #  vars: 
+    #    GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
@@ -20,3 +20,5 @@
   #2. task level
   #3. prompt
   #4. play
+  #5. files
+  #6. inventory
