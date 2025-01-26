@@ -29,5 +29,5 @@
     register: ec2_info
 
   - name: print ec2_info
-    ansible.builtlin.debug:
+    ansible.builtin.debug:
       msg: "{{ ec2_info }}"
