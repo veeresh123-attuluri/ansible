@@ -2,8 +2,8 @@
   connection: local
   hosts: local
   vars:
-    subnet_id: subnet-0ea509ad4cba242d7
-    sg_id: sg-0e978039cdb6c3057
+    subnet_id: subnet-0cbe346456117009a
+    sg_id: sg-0b6db36aaba24f520
     ami_id: ami-09c813fb71547fc4f
     instance_type: t3.micro
     zone: veeresh82s.online
@@ -12,7 +12,7 @@
     - backend
     - frontend
   tasks:
-  - name: Install AWS Python libraries
+  - name: Install MySQL libraries
     ansible.builtin.pip:
       name: "{{ item }}"
       executable: pip3.9
@@ -49,3 +49,5 @@
       wait: true
       overwrite: true
     loop: "{{ ec2_info.results }}"
+
+  
